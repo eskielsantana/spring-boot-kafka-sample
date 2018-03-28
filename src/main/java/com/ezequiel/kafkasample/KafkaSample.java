@@ -1,4 +1,4 @@
-package com.vanhack.ezequiel;
+package com.ezequiel.kafkasample;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,14 +12,14 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @EnableSwagger2
-@SpringBootApplication(scanBasePackages = { "com.vanhack.ezequiel" })
-public class EskielsBaseProject extends WebMvcConfigurerAdapter {
+@SpringBootApplication(scanBasePackages = { "com.ezequiel.kafkasample" })
+public class KafkaSample extends WebMvcConfigurerAdapter {
 
-	final static org.slf4j.Logger logger = LoggerFactory.getLogger(EskielsBaseProject.class);
+	final static org.slf4j.Logger logger = LoggerFactory.getLogger(KafkaSample.class);
 
 	public static void main(String[] args) {
 		logger.info("Application Started");
-		SpringApplication.run(EskielsBaseProject.class, args);
+		SpringApplication.run(KafkaSample.class, args);
 	}
 
 	// This function returns the data of the application in the swagger page
@@ -37,7 +37,7 @@ public class EskielsBaseProject extends WebMvcConfigurerAdapter {
 	// Defines which data will be displayed by swagger
 	private ApiInfo generateApiInfo()
 	{
-		return new ApiInfo("Ezequiel's SkipTheDishes Challenge", "This is a project that I have created during the SkipTheDishes Interview Fair on Saturday (17/03).", "Version 1.0 - Starter",
+		return new ApiInfo("Ezequiel's Kafka Sample", "This is just a simple sample I am doing to study Redis behavior.", "Version 1.0 - Starter",
 				"urn:tos", "eskiel.sj@gmail.com", "Apache 2.0", "http://www.apache.org/licenses/LICENSE-2.0");
 	}
 

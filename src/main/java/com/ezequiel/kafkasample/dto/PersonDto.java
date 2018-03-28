@@ -1,4 +1,4 @@
-package com.vanhack.ezequiel.dto;
+package com.ezequiel.kafkasample.dto;
 
 import java.io.Serializable;
 
@@ -38,5 +38,10 @@ public class PersonDto implements Serializable{
 
     public void setAge(Integer age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "(" + id +", " + fullName + ", " + age + ')';
     }
 }

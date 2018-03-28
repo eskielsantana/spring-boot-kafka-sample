@@ -1,4 +1,4 @@
-package com.vanhack.ezequiel.service.kafka;
+package com.ezequiel.kafkasample.service.kafka;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,13 +13,6 @@ public class KafkaProducer {
 
     @Autowired
     private KafkaTemplate<String, String> kafkaTemplate;
-
-//    public static KafkaProducer getInstance(){
-//        if(kafkaProducer == null){
-//            kafkaProducer = new KafkaProducer();
-//        }
-//        return kafkaProducer;
-//    }
 
     public void send(String topic, String payload) {
         LOGGER.info("sending payload='{}' to topic='{}'", payload, topic);

@@ -1,4 +1,4 @@
-package com.vanhack.ezequiel.controller;
+package com.ezequiel.kafkasample.controller;
 
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;

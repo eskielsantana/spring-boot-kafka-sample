@@ -1,8 +1,8 @@
-package com.vanhack.ezequiel.controller;
+package com.ezequiel.kafkasample.controller;
 
-import com.vanhack.ezequiel.dto.PersonDto;
-import com.vanhack.ezequiel.service.kafka.KafkaProducer;
-import com.vanhack.ezequiel.util.JsonUtils;
+import com.ezequiel.kafkasample.dto.PersonDto;
+import com.ezequiel.kafkasample.service.kafka.KafkaProducer;
+import com.ezequiel.kafkasample.util.JsonUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

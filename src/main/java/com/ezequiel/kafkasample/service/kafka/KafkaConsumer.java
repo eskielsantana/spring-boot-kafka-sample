@@ -1,7 +1,7 @@
-package com.vanhack.ezequiel.service.kafka;
+package com.ezequiel.kafkasample.service.kafka;
 
-import com.vanhack.ezequiel.dto.PersonDto;
-import com.vanhack.ezequiel.util.JsonUtils;
+import com.ezequiel.kafkasample.dto.PersonDto;
+import com.ezequiel.kafkasample.util.JsonUtils;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;

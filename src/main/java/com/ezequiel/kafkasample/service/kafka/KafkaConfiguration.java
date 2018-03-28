@@ -1,4 +1,4 @@
-package com.vanhack.ezequiel.service.kafka;
+package com.ezequiel.kafkasample.service.kafka;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.producer.ProducerConfig;
